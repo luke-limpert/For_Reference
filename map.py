@@ -13,3 +13,12 @@ def split_title_and_name(person):
 #map is going to run the function for every iteration available
 #people is a list, so it will run the function for every person in the list
 print(list(map(split_title_and_name, people)))
+
+#reworked into a lambda function with built in iteration
+for person in people:
+	print(lambda x: x.split()[0](person) + ' ' + x.split()[-1](person))
+
+#reworked using map() 
+print(list(map(lambda person: person.split()[0] + ' ' + person.split()[-1], people)))
+
+
