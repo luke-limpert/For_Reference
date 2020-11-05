@@ -11,3 +11,8 @@ print(my_list)
 
 my_list = [number for number in range(0,1000) if number % 2 == 0]
 print(my_list)
+
+#wine Example
+#this line generates an array from a txt or in this case a csv file
+wines = np.genfromtxt("datasets/winequality-red.csv", delimiters=";", skip_headers = 1)
+
